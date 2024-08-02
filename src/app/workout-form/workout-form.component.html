@@ -1,0 +1,24 @@
+<mat-form-field>
+    <mat-label>User Name</mat-label>
+    <input matInput [(ngModel)]="userName" placeholder="Enter your name">
+  </mat-form-field>
+  
+  <mat-form-field>
+    <mat-label>Select Workout Type</mat-label>
+    <mat-select [(ngModel)]="workoutType">
+      <mat-option value="running">Running</mat-option>
+      <mat-option value="cycling">Cycling</mat-option>
+      <mat-option value="swimming">Swimming</mat-option>
+      <mat-option value="weight-training">Weight Training</mat-option>
+      <mat-option value="yoga">Yoga</mat-option>
+      <mat-option value="hiit">HIIT (High-Intensity Interval Training)</mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+  <mat-form-field>
+    <mat-label>Workout Minutes</mat-label>
+    <input matInput [(ngModel)]="workoutMinutes" placeholder="Enter workout minutes" type="number">
+  </mat-form-field>
+  
+  <button mat-raised-button color="primary" (click)="addWorkout()" class="add-workout-button">Add Workout</button>
+  

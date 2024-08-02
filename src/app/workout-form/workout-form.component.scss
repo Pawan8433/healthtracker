@@ -1,0 +1,30 @@
+/* Hide arrows in number input */
+ 
+  input[type="number"]::-webkit-inner-spin-button, 
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Chrome, Safari */
+    margin: 0;
+  }
+  /* Add your custom button styling here */
+
+.add-workout-button {
+  border: none;
+    margin-top:100px; /* Add some space above the button */
+    font-size: 16px; /* Increase font size for better readability */
+    padding: 12px 24px; /* Adjust padding to make the button more prominent */
+    border-radius: 4px; /* Make the button corners slightly rounded */
+    background-color: #007bff; /* Customize the background color */
+    color: white; /* Set text color to white */
+    text-transform: uppercase; /* Make the text uppercase */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  
+    &:hover {
+      background-color: #0056b3; /* Change background color on hover */
+    }
+  
+    &:focus {
+      outline: none; /* Remove default focus outline */
+      box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Add custom focus shadow */
+    }
+  }
+  
